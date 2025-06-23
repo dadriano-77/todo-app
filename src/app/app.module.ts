@@ -17,7 +17,7 @@ export class AppModule {
   constructor(private upgrade: UpgradeModule) {}
 
   ngDoBootstrap(appRef: ApplicationRef): void {
-    this.upgrade.bootstrap(document.body, ['todoApp'], { strictDi: true });
+    this.upgrade.bootstrap(document.body, ['myApp'], { strictDi: true });
     console.log('✅ AngularJS has been bootstrapped.');
 
     appRef.bootstrap(AppComponent);
