@@ -63,7 +63,6 @@ export class TodoComponent implements OnInit {
 
   deleteTodo(id: number): void {
     const index = this.todos.findIndex((t) => t.id === id);
-    console.log('deleted on cost before if');
     if (index >= 0) {
       const deleted = this.todos.splice(index, 1)[0];
       this.showNotification(`Todo deleted: ${deleted.text}`, 'success');
